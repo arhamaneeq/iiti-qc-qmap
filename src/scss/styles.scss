@@ -1,3 +1,43 @@
-h1 {
-    text-align: center;
+body {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#NavScreen {
+    width: 80vw;
+    height: 60vh;
+    padding: 20vh 10vw;
+    display: table;
+
+    & > div {
+        display: table-cell;
+        vertical-align: middle;
+
+        .navButton {
+            transition: transform 0.2s ease-in-out;
+            
+            p {
+                margin: 0;
+            }
+            
+            p:nth-child(1) {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            
+            p:nth-child(2) {
+                font-size: 1.2em;
+                color: grey;
+                margin-bottom: 2em;
+            }
+    
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
 }

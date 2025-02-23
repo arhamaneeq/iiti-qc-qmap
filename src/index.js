@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom";
-import App from "./js/App";
+import App from "./app/App";
 
 import "../src/scss/styles.scss"
 

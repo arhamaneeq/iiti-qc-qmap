@@ -3,37 +3,34 @@ A Project by QC Club IIT Indore
 
 ## Development Setup
 
-𝗰𝗹𝗼𝗻𝗶𝗻𝗴 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆
+### Cloning the Repository
 
-step1 - open vs code ( new window )
+Navigate to your desired folder and run
+```bash
+git clone https://github.com/arhamaneeq/iiti-qc-qmap.git
+cd iiti-qc-qmap
+```
+This creates the root `iiti-qc-qmap` folder. Install the node package manager via `pip`, using
+```bash
+pip install npm
+```
+Create the Python development environment necessary for PennyLane to run by running
+```
+python -m venv .venv
+pip install -r requirements.txt
+```
 
-step2 - you will get 4th option as 'clone the repository'
+### Running Programs
+After `npm` is successfully installed, to view the frontend run 
+```npm start```
+To work on the Pennylane backend, run
+```
+./.venv/Scripts/Activate
+```
 
-
-![QMap Screenshot](assets/screenshot.png)
-
-
-step3 - now all the files should be loaded on vs code
-
-step4 - now install node.js from 
-
-[Node.js Official Website](https://nodejs.org/)
-
-now install it and set it up  
-
-step5 - if you are seeing the error " running scripts is disabled on this system "
-   
-just open windows powershell - TO TEMPORARILY DISABLE IT = '''Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process'''
-                                
-                               TO PERMANENTLY DISABLE IT = '''Set-ExecutionPolicy RemoteSigned -Scope CurrentUser'''
-
-
-
-error should be fixed.
-
-step6 - now install npm , using ''' pip install npm ''' on vs code terminal
-
-
-step7 - after installation just use ''' npm start'''
-
-now everything will be set.
+**Note**
+If you are seeing the error `running scripts is disabled on your system`, open Windows PowerShell as Administrator and run
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+If NodeJS is not installed on your system, install it from [here](https://nodejs.org/).
